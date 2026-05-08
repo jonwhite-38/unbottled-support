@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbottled - Privacy Policy</title>
+    <style>
+        :root {
+            --surface: #121413;
+            --surface-container: #1E2020;
+            --surface-container-low: #1A1C1C;
+            --on-surface: #E2E2E1;
+            --on-surface-variant: #C1C8C7;
+            --outline: #8B9291;
+            --primary: #AACFCB;
+            --on-primary: #123634;
+            --secondary: #D0C1E0;
+            --tertiary: #E5C194;
+            --error: #FFB4AB;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background-color: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        header p {
+            font-size: 16px;
+            color: var(--on-surface-variant);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid rgba(170, 207, 203, 0.3);
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: rgba(170, 207, 203, 0.1);
+        }
+
+        nav a.active {
+            background: rgba(170, 207, 203, 0.15);
+        }
+
+        .effective-date {
+            text-align: center;
+            font-size: 13px;
+            color: var(--outline);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            margin-top: 36px;
+            color: var(--on-surface);
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .section {
+            background: var(--surface-container);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: var(--on-surface-variant);
+            line-height: 1.75;
+            margin-bottom: 12px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section ul {
+            font-size: 15px;
+            color: var(--on-surface-variant);
+            line-height: 1.75;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: rgba(170, 207, 203, 0.06);
+            border: 1px solid rgba(170, 207, 203, 0.15);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+
+        .highlight p {
+            font-size: 15px;
+            color: var(--on-surface-variant);
+            line-height: 1.75;
+        }
+
+        .highlight strong {
+            color: var(--primary);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 10px 16px;
+            background: var(--surface-container-low);
+            color: var(--on-surface-variant);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table th:first-child {
+            border-radius: 10px 0 0 0;
+        }
+
+        .data-table th:last-child {
+            border-radius: 0 10px 0 0;
+        }
+
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--on-surface-variant);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 8px;
+            background: rgba(170, 207, 203, 0.15);
+            color: var(--primary);
+        }
+
+        .badge-none {
+            background: rgba(139, 146, 145, 0.15);
+            color: var(--outline);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: 48px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--outline);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 32px 16px 64px; }
+            header h1 { font-size: 26px; }
+            nav { flex-direction: column; align-items: center; }
+            .data-table { font-size: 13px; }
+            .data-table th, .data-table td { padding: 8px 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Unbottled</h1>
+            <p>Privacy Policy</p>
+            <nav>
+                <a href="index.html">Support</a>
+                <a href="privacy.html" class="active">Privacy Policy</a>
+            </nav>
+        </header>
+
+        <p class="effective-date">Effective date: May 7, 2025</p>
+
+        <div class="highlight">
+            <p><strong>The short version:</strong> Unbottled stores everything locally on your device. We do not collect, transmit, or have access to any of your personal data, conversation notes, or usage information. There are no accounts, no servers, and no analytics.</p>
+        </div>
+
+        <h2>Information We Do Not Collect</h2>
+        <div class="section">
+            <p>Unbottled does not collect any personal information. Specifically, the app does not:</p>
+            <ul>
+                <li>Transmit data over the internet</li>
+                <li>Require or support user accounts or login</li>
+                <li>Use analytics, crash reporting, or telemetry services</li>
+                <li>Include any third-party SDKs or tracking frameworks</li>
+                <li>Access your contacts, photos, location, or other device data</li>
+                <li>Use advertising identifiers</li>
+                <li>Communicate with any external server for any purpose</li>
+            </ul>
+            <p>We cannot see your data because it never leaves your device.</p>
+        </div>
+
+        <h2>Data Stored on Your Device</h2>
+        <div class="section">
+            <p>Unbottled stores the following data locally on your iPhone. This data is never transmitted off your device.</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Storage</th>
+                        <th>Shared</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conversation topics, private notes, shareable drafts</td>
+                        <td>SwiftData (on-device database)</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                    <tr>
+                        <td>People and relationship types</td>
+                        <td>SwiftData (on-device database)</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                    <tr>
+                        <td>Biometric lock preference</td>
+                        <td>iOS Keychain</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                    <tr>
+                        <td>Notification privacy preference</td>
+                        <td>iOS Keychain</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                    <tr>
+                        <td>Onboarding completion state</td>
+                        <td>iOS Keychain</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled reminder times</td>
+                        <td>iOS notification system (local only)</td>
+                        <td><span class="badge-none">Never</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Biometric Authentication</h2>
+        <div class="section">
+            <p>Unbottled can optionally use Face ID or Touch ID to lock access to the app. Biometric data is processed entirely by the iOS operating system. Unbottled never receives, stores, or has access to your biometric information. The app only receives a pass/fail result from the system.</p>
+        </div>
+
+        <h2>Notifications</h2>
+        <div class="section">
+            <p>Reminder notifications are scheduled locally using the iOS notification system. No data is sent to Apple's push notification servers or any other remote service. Notification content can be configured to hide topic details for additional privacy.</p>
+        </div>
+
+        <h2>Clipboard</h2>
+        <div class="section">
+            <p>When you copy a shareable draft to the clipboard, the copied text is marked as device-local only (it will not sync to other devices via Universal Clipboard) and automatically expires after 2 minutes.</p>
+        </div>
+
+        <h2>Sharing</h2>
+        <div class="section">
+            <p>If you choose to share a draft through the system share sheet (Messages, Mail, or another app), the text leaves Unbottled and enters the app you selected. At that point, privacy is governed by that app's own policies. Unbottled shows a one-time privacy notice before your first share to make this clear.</p>
+        </div>
+
+        <h2>Data Deletion</h2>
+        <div class="section">
+            <p>You are in full control of your data:</p>
+            <ul>
+                <li><strong>Delete individual items</strong> from their detail screens at any time.</li>
+                <li><strong>Delete all data</strong> from Settings, which permanently removes all topics, people, and Keychain-stored preferences.</li>
+                <li><strong>Delete the app</strong> to remove all data from your device. Since nothing is stored remotely, deletion is complete and irreversible.</li>
+            </ul>
+            <p>There is no backup or recovery option because your data is never copied off your device.</p>
+        </div>
+
+        <h2>Children's Privacy</h2>
+        <div class="section">
+            <p>Unbottled does not knowingly collect any information from anyone, including children under 13. Since no data is collected at all, no special provisions are necessary.</p>
+        </div>
+
+        <h2>Changes to This Policy</h2>
+        <div class="section">
+            <p>If this privacy policy is updated, the changes will be posted on this page with a revised effective date. Since Unbottled collects no data today, any future changes would be reflected in a new version of the app.</p>
+        </div>
+
+        <h2>Contact</h2>
+        <div class="section">
+            <p>If you have questions about this privacy policy, please contact us at <a href="mailto:unbottled.support@gmail.com" style="color: var(--primary);">unbottled.support@gmail.com</a>.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Unbottled. All rights reserved.</p>
+            <p style="margin-top: 8px;"><a href="index.html">Support</a></p>
+        </footer>
+    </div>
+</body>
+</html>
