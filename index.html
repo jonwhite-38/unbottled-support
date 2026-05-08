@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbottled - Support</title>
+    <style>
+        :root {
+            --surface: #121413;
+            --surface-container: #1E2020;
+            --surface-container-low: #1A1C1C;
+            --on-surface: #E2E2E1;
+            --on-surface-variant: #C1C8C7;
+            --outline: #8B9291;
+            --primary: #AACFCB;
+            --on-primary: #123634;
+            --secondary: #D0C1E0;
+            --tertiary: #E5C194;
+            --error: #FFB4AB;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background-color: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        header p {
+            font-size: 16px;
+            color: var(--on-surface-variant);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid rgba(170, 207, 203, 0.3);
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: rgba(170, 207, 203, 0.1);
+        }
+
+        nav a.active {
+            background: rgba(170, 207, 203, 0.15);
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--on-surface);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            background: var(--surface-container);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+        }
+
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--on-surface);
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            font-size: 14px;
+            color: var(--on-surface-variant);
+            line-height: 1.7;
+        }
+
+        .faq-item ol, .faq-item ul {
+            font-size: 14px;
+            color: var(--on-surface-variant);
+            line-height: 1.7;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .faq-item li {
+            margin-bottom: 4px;
+        }
+
+        .faq-item code {
+            background: var(--surface-container-low);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: var(--tertiary);
+        }
+
+        .callout {
+            background: rgba(170, 207, 203, 0.05);
+            border: 1px solid rgba(170, 207, 203, 0.15);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: var(--on-surface-variant);
+        }
+
+        .callout strong {
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: 48px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--outline);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-tip {
+            background: rgba(170, 207, 203, 0.15);
+            color: var(--primary);
+        }
+
+        .badge-important {
+            background: rgba(229, 193, 148, 0.15);
+            color: var(--tertiary);
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 32px 16px 64px; }
+            header h1 { font-size: 26px; }
+            nav { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Unbottled</h1>
+            <p>Support & Help</p>
+            <nav>
+                <a href="index.html" class="active">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </nav>
+        </header>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>What is Unbottled?</h3>
+                <p>Unbottled is a private journaling app for the conversations you haven't had yet. It helps you process difficult emotions, prepare what you want to say, and track the things left unspoken in your relationships. Everything stays on your device.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my data?</h3>
+                <p>You can delete your data in two ways:</p>
+                <ul>
+                    <li><strong>Delete individual topics or people</strong> from their detail screens using the Delete button.</li>
+                    <li><strong>Delete all data at once</strong> by going to <code>Settings</code> and tapping <code>Delete All Data</code>. This removes all topics, people, and preferences permanently.</li>
+                </ul>
+                <p>You can also delete the app entirely, which removes all stored data from your device including Keychain entries.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data backed up or synced anywhere?</h3>
+                <p>No. Unbottled does not use iCloud, does not sync to any server, and does not back up your notes anywhere outside your device. If you delete the app or lose your device, your data cannot be recovered.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I set up Face ID / Touch ID?</h3>
+                <p>Go to <code>Settings</code> and enable the biometric lock toggle. Once enabled, Unbottled will require Face ID or Touch ID each time you return to the app after switching away. Your notes are hidden in the app switcher with a privacy screen.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do reminders work?</h3>
+                <p>When you create or edit a topic, you can set a reminder date and time. Unbottled sends a local notification on your device at that time. No data is sent to any server for this. You can manage notification permissions in your device's Settings app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What does "Mark as Shared" mean?</h3>
+                <p>Marking a topic as shared means you've had the conversation or sent your draft. The topic moves to the Shared status and any active reminder is cancelled. You can reopen it later if needed.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I share my draft with someone?</h3>
+                <p>Yes. After preparing a shareable draft, you can copy it to your clipboard or share it through any app using the system share sheet. Unbottled will show a one-time privacy notice reminding you that once shared, privacy depends on the receiving app. Copied text expires from the clipboard after 2 minutes and is marked device-local only.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What are the topic categories?</h3>
+                <p>Topics can be categorized to help you understand the emotional context of what you want to say:</p>
+                <ul>
+                    <li><strong>Appreciation</strong> &mdash; what you value but rarely say</li>
+                    <li><strong>Boundary</strong> &mdash; limits you need to express</li>
+                    <li><strong>Hurt</strong> &mdash; pain you haven't acknowledged</li>
+                    <li><strong>Need</strong> &mdash; something you haven't asked for</li>
+                    <li><strong>Regret</strong> &mdash; what you wish you handled differently</li>
+                    <li><strong>Unresolved</strong> &mdash; what's still hanging in the air</li>
+                    <li><strong>Question</strong> &mdash; something you're afraid to ask</li>
+                    <li><strong>Apology</strong> &mdash; what you need to own</li>
+                    <li><strong>Affection</strong> &mdash; warmth you're holding back</li>
+                    <li><strong>Avoiding</strong> &mdash; a conversation you keep putting off</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does Unbottled require an internet connection?</h3>
+                <p>No. Unbottled works entirely offline. There are no accounts, no login, and no server communication of any kind.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="faq-item">
+                <h3>Need more help?</h3>
+                <p>If you have a question not covered here or need to report an issue, please reach out at <a href="mailto:unbottled.support@gmail.com" style="color: var(--primary);">unbottled.support@gmail.com</a>.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Unbottled. All rights reserved.</p>
+            <p style="margin-top: 8px;"><a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
